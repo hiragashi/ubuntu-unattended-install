@@ -113,13 +113,13 @@ d-i grub-installer/only_debian boolean true
 d-i finish-install/reboot_in_progress note
 ```
 
-Create the iso with the full automation
+Create the iso with this command
 ```
 mkisofs -D -r -V "UNATTENDED_UBUNTU" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o /tmp/ubuntu-desktop-unattended-install.iso /opt/ubuntuiso
 ```
+Write the file that is now in /tmp/ubuntu-desktop-unattended-install.iso using dd or any tool that writes bootable isos (Etcher keeps giving warnings about being not bootable so i didnt bother with it)... it will install within minutes and have you up and running with absolutely no input at all
 
-
-if you are having trouble installing it fully unattended it may be because when you insert your USB stick, that gets assigned as /dev/sda rather than your actual internal hard drive which should be /dev/sda so you can place this in the seed file to fix it and ignore USB sticks altogether
+if you are having trouble installing it fully unattended and it gets stuck on the stupid WELCOME / Language Selection screen it may be because when you insert your USB stick, that gets assigned as /dev/sda rather than your actual internal hard drive which should be /dev/sda so you can place this in the seed file to fix it and ignore USB sticks altogether
 
 ```
 # Due notably to potential USB sticks, the location of the MBR can not be
