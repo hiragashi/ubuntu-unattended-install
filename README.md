@@ -4,7 +4,7 @@ Scripts are attached of my basic configuration I used that worked. Just change t
 
 download the Ubuntu Desktop iso from any ubuntu mirror site you want, it will probably work with other flavours of Ubuntu too but untested right now. Once you got it -
 
-Mount Ubuntu ISO
+Mount Ubuntu ISO but this doesnt work all the versions
 
 You will need to mount the ISO files so that you can edit the pertinent files.
 ```
