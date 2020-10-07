@@ -1,4 +1,4 @@
-# # Partitioning removal of keys
+# # Partitioning removal of keys to prevent file sys error
 
 ubiquity partman-auto/disk string /dev/sda
 ubiquity partman-auto/method string regular
