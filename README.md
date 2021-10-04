@@ -2,7 +2,7 @@ This will create a fully automatic installation of Ubuntu Desktop versions so yo
 
 Scripts are attached of my basic configuration I used that worked. Just change the passwords under root and user account and if you use /dev/sda it will work straight out of the box
 
-download the Ubuntu Desktop iso from any ubuntu mirror site you want, it will probably work with other flavours of Ubuntu too but untested right now. Once you got it -
+download the Ubuntu Desktop iso from any ubuntu mirror site you want, it will probably work with other flavours of Ubuntu too but untested right now. Once you got it
 
 Mount Ubuntu ISO
 
